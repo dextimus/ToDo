@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <!-- <link rel="stylesheet" href="./css/sakura.css" />
+    <link rel="stylesheet" href="./css/styles.css" /> -->
+  </head>
+  <body>
+    <p id="user"></p>
+
+    <div class="newTask">
+      <h2>Type your task</h2>
+      <input id="newTaskInput" class="newTask-Input" type="text" />
+      <button id="createButton">create</button>
+    </div>
+
+    <div class="searchTask">
+      <h3>Search your task</h3>
+      <button id="searchButton">search</button>
+      <input id="seachTaskInput" class="searchTask-Input" type="text" />
+    </div>
+
+    <h4>Your tasks:</h4>
+
+    <label class="filterByStatus" for="filter">Filter by status:</label>
+    <select name="filter" id="filterByStatus" class="filter">
+      <option value="choose">-- Choose --</option>
+      <option value="all">All</option>
+      <option value="created">Created</option>
+      <option value="started">Started</option>
+      <option value="completed">Completed</option>
+    </select>
+
+    <label class="sortByDate" for="sorting">Sort by date:</label>
+    <select name="sorting" id="sortByDate" class="sorting">
+      <option value="choose">-- Choose --</option>
+      <option value="asc">Ascending</option>
+      <option value="desc">Descending</option>
+    </select>
+
+    <ul id="tasksList"></ul>
+
+    <script type="module" src="bundle.js" defer></script>
+  </body>
+</html>

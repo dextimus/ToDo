@@ -1,0 +1,15 @@
+$mainColor: #d5d5c5;
+$secondaryColor: #98b1b6;
+$tertiaryColor: #bbbbbb;
+
+body {
+  background-color: $mainColor;
+}
+
+input {
+  background-color: $secondaryColor;
+}
+
+.filter, .sorting {
+  background-color: $tertiaryColor;
+}
